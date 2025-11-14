@@ -15,9 +15,9 @@ const Calendar = () => {
       }}
       eventInteractive
       viewClassNames="calendar"
-      events={{
+      events={
         {title: "FCH District Glen Allen VA Event 2026", start: "2026-03-13", end: "2026-03-15"}
-      }}
+      }
     />
   );
 };
