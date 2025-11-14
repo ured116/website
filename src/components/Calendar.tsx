@@ -1,6 +1,5 @@
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import googleCalendar from '@fullcalendar/google-calendar';
 import { useMediaQuery } from 'react-responsive';
 
 const Calendar = () => {
@@ -17,9 +16,7 @@ const Calendar = () => {
       eventInteractive
       viewClassNames="calendar"
       events={{
-        googleCalendarApiKey: import.meta.env.PUBLIC_GOOGLE_API_KEY,
-        googleCalendarId: 'c_fa86ad1c3f04173928178d272467fcbba9b5160e0fdb37c5e9a97a5473b47e23@group.calendar.google.com',
-        
+        {title: "FCH District Glen Allen VA Event 2026", start: "2026-03-13", end: "2026-03-15"}
       }}
     />
   );
