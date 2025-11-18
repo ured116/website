@@ -38,7 +38,6 @@ const HomeParallax = () => {
                   <MdChevronRight size={16} className="p-0 react-icon" />
                 </a>
             </Feature>
-            <img className="p-2" src="/hero.png" />
           </div>
         </Float>
       </ParallaxLayer>
