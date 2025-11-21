@@ -1,7 +1,7 @@
 ---
 import Navigation from 'components/Navigation.astro';
 import { SkipLinks } from 'accessible-astro-components';
-import { FaInstagram, FaGithub } from 'react-icons/fa/index';
+// import { FaInstagram, FaGithub } from 'react-icons/fa/index';
 ---
 
 <header>
@@ -28,9 +28,11 @@ import { FaInstagram, FaGithub } from 'react-icons/fa/index';
         <li class="submenu-item">
           <a href="/about/school">School</a>
         </li>
+        <!-- Commenting out incase we want to readd the "contact" option in the menu
         <li class="submenu-item">
           <a href="/contact">Contact</a>
         </li>
+        -->
       </ul>
     </li>
     <li class="menu-item has-dropdown">
@@ -58,16 +60,23 @@ import { FaInstagram, FaGithub } from 'react-icons/fa/index';
         </li>
       </ul>
     </li>
+    <!-- 
     <li class="menu-item type-icon">
       <a href="https://instagram.com/frc_404" class="icon-link" title="Check us out on Instagram">
         <FaInstagram className="react-icon" />
       </a>
     </li>
+    -->
+    <li class="menu-item">
+    <a href="/contact">Contact us!</a> 
+    </li>
+    <!--
     <li class="menu-item type-icon">
       <a href="https://github.com/FRC-404-NOT-FOUND" class="icon-link" title="Check us out on GitHub">
         <FaGithub className="react-icon" />
       </a>
     </li>
+  -->
   </Navigation>
 </header>
 
