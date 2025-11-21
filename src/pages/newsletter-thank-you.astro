@@ -4,7 +4,11 @@ import { MdChevronRight } from 'react-icons/md/index';
 
 const email = new URL(Astro.request.url).searchParams.get('email');
 if (!email) {
+<<<<<<< HEAD
   return Astro.redirect('/');
+=======
+  return Astro.redirect('/404');
+>>>>>>> 51fad5e (WOW this is a lot)
 }
 ---
 <DefaultLayout title="Thank You">
